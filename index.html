@@ -8,21 +8,51 @@
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <style>
+      #debug {
+        position: fixed;
+        z-index: 10000;
+        background-color: #fff;
+        padding: 10px;
+        top: 0;
+        left: 0;
+        display: block;
+      }
+    </style>
   </head>
 
-  <body>
+  <body style="margin: 0; overflow: hidden;">
+    <div id="debug"></div>
     <a-scene
       vr-mode-ui="enabled: false"
-      arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
+      embedded
+      arjs="sourceType: webcam; debugUIEnabled: false;"
     >
+      <a-box
+        material="color: red"
+        gps-entity-place="latitude:35.42409234475964; longitude:139.54218085858142;"
+        scale="15 15 15"
+      ></a-box>
       <a-text
-        value="This content will always face you."
+        id="text"
+        value=""
         look-at="[gps-camera]"
-        scale="120 120 120"
-        gps-entity-place="latitude: 35.42412789161751; longitude:139.54219223823063;"
+        scale="30 30 30"
+        position="0 55 0"
+        gps-entity-place="latitude:35.42409234475964; longitude:139.54218085858142;"
       ></a-text>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
+    <script>
+      window.addEventListener('load', () => {
+        const text = document.getElementById('text');
+        text.addEventListener('gps-entity-place-update-positon', (event) => {
+          document.getElementById('debug').textContent = `あと${event.detail.distance}m`;
+          text.setAttribute('value', text.getAttribute('distanceMsg') + ' left');
+        });
+      });
+    </script>
   </body>
 </html>
+
 
