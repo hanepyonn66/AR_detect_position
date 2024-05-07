@@ -1,18 +1,31 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <py-script>
-for i in range(5):
-    print('Pythonで出力！')
-    </py-script>
+<html>
+body style='margin: 0; overflow: hidden;'>
+
+  <div class="centered instructions">Click Pins</div>
+  <div class="centered instructions mt-5" id="count-area">0</div>
+
+  <a-scene cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;' raycaster="objects: [gps-entity-place];"
+      vr-mode-ui='enabled: false' embedded
+      arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+      <!-- minDistance指定した方がいいかも -->
+      <a-camera gps-camera rotation-reader></a-camera>
+  </a-scene>
+
+  <div class="centered">
+      <input type="text" placeholder="Name of Spot" class="form-control" id="title">
+      <div class="container">
+          <div class="row">
+              <div class="col-3"></div>
+              <div class="col-3">
+                  <button data-action="change" id="add-button"></button>
+              </div>
+              <div class="col-3">
+                  <button data-action="change" id="reset-button"></button>
+              </div>
+              <div class="col-3"></div>
+          </div>
+      </div>
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>
-
