@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>テストページV5</title>
+    <title>テストページV6</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <!--ローカルに保存、オンラインの奴はバグあり-->
     <script type='text/javascript' src='./libs/ar-threex-location-only.js'></script>
@@ -12,7 +12,9 @@
     <!--htmlshader用コンポーネント２つ-->
     <script src="libs/aframe-html-shader.min.js"></script>
     <script src="libs/html2canvas.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <!--css読み込み-->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/shader.css">
 </head>
 <!--北を補正するプログラム、ついでに東西南北の箱も生成-->
 <script>
@@ -165,6 +167,9 @@
     <div id="orientinfo"
         style='position:absolute; right: 10px; bottom: 2%; z-index:999; background-color: blue; color: white; padding: 10px'>
         Orientation .</div>
+    <div class="scroll-banner">
+        <p class="scroll-text">ここに流れるテキストを入力してください。このテキストは繰り返しスクロールします。</p>
+    </div>
 </body>
 
 </html>
