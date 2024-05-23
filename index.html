@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>テストページV9</title>
+    <title>テストページV10</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <!--ローカルに保存、オンラインの奴はバグあり-->
     <script type='text/javascript' src='./libs/ar-threex-location-only.js'></script>
@@ -359,11 +359,11 @@
         style='position:absolute; right: 10px; bottom: 2%; z-index:-1; background-color: blue; color: white; padding: 10px'>
         Orientation .</div>
     <!--バナーに流したい文字を入力-->
-    <div class="scroll-banner" style='position:absolute;top: 1%; z-index:999'>
+    <div class="scroll-banner" style='position:absolute;top: 1%; z-index:1'>
         <p class="scroll-text">iPhoneの方は一番のはじめのアクセス時、リロードが必要です。方位がおかしくなった場合はリロードしてください。画面の回転ロックはオンにしてください。</p>
     </div>
-    <div id="menuButton">メニューを開く</div>
-    <div id="menuContent">
+    <div id="menuButton" style='z-index:1'>メニューを開く</div>
+    <div id="menuContent"style='z-index:1'>
         <input type="checkbox" id="option1" name="option1">
         <label for="option1">オプション1</label><br>
         <input type="checkbox" id="option2" name="option2">
