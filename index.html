@@ -349,21 +349,17 @@
     </a-scene>
 
     <!--ボタン類の作成-->
-<!--
-    <div id='setloc'
-        style='position:absolute; left: 10px; bottom: 2%; z-index:999; background-color: blue; color: white; padding: 10px'>
-        <input type='button' id='go' value='Set Heading' onclick="setHeading()" />
-    </div>-->
+
     <!--なぜかないと動かないので隠してある-->
     <div id="orientinfo"
         style='position:absolute; right: 10px; bottom: 2%; z-index:-1; background-color: blue; color: white; padding: 10px'>
         Orientation .</div>
     <!--バナーに流したい文字を入力-->
-    <div class="scroll-banner" style='position:absolute;top: 1%; z-index:1'>
+    <div class="scroll-banner" style='position:absolute;top: 5px; z-index:1'>
         <p class="scroll-text">iPhoneの方は一番のはじめのアクセス時、リロードが必要です。方位がおかしくなった場合はリロードしてください。画面の回転ロックはオンにしてください。</p>
     </div>
-    <div id="menuButton" style='z-index:1'>メニューを開く</div>
-    <div id="menuContent"style='z-index:1'>
+    <div id="menuButton" style='position:absolute;top: 65px;z-index:1'>メニューを開く</div>
+    <div id="menuContent"style='position:absolute;top: 95px;z-index:1'>
         <input type="checkbox" id="option1" name="option1">
         <label for="option1">オプション1</label><br>
         <input type="checkbox" id="option2" name="option2">
