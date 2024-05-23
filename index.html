@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>テストページV6</title>
+    <title>テストページV7</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <!--ローカルに保存、オンラインの奴はバグあり-->
     <script type='text/javascript' src='./libs/ar-threex-location-only.js'></script>
@@ -135,9 +135,106 @@
 
 <body>
     <!--shader－で反映させるhtml-->
-    <div id="WoodDeck">
-        <h2>ウッドデッキ</h2>
-        <img src="photo/WoodDeck.jpg" alt="ウッドデッキ 写真">
+    <div>
+        <div id="MainBuildingEast">
+            <h2>本館東</h2>
+            <img src="photo/MainBuildingEast.jpg" alt="本館東 写真">
+        </div>
+
+        <div id="MainBuildingCentral">
+            <h2>本館中央</h2>
+            <img src="photo/MainBuildingCentral.jpg" alt="本館中央 写真">
+        </div>
+
+        <div id="MainBuildingWest">
+            <h2>本館西</h2>
+            <img src="photo/MainBuildingWest.jpg" alt="本館西 写真">
+        </div>
+
+        <div id="WoodDeck">
+            <h2>ウッドデッキ</h2>
+            <img src="photo/WoodDeck.jpg" alt="ウッドデッキ 写真">
+        </div>
+
+        <div id="MaterialsLabEast">
+            <h2>材料ラボ東</h2>
+            <img src="photo/MaterialsLabEast.jpg" alt="材料ラボ東 写真">
+        </div>
+
+        <div id="MaterialsLabWest">
+            <h2>材料ラボ西</h2>
+            <img src="photo/MaterialsLabWest.jpg" alt="材料ラボ西 写真">
+        </div>
+
+        <div id="DetailedTest1">
+            <h2>本館中央詳細テスト1</h2>
+            <img src="photo/DetailedTest1.jpg" alt="本館中央詳細テスト1 写真">
+        </div>
+
+        <div id="DetailedTest2">
+            <h2>本館中央詳細テスト2</h2>
+            <img src="photo/DetailedTest2.jpg" alt="本館中央詳細テスト2 写真">
+        </div>
+
+        <div id="DetailedTest3">
+            <h2>本館中央詳細テスト3</h2>
+            <img src="photo/DetailedTest3.jpg" alt="本館中央詳細テスト3 写真">
+        </div>
+
+        <div id="DetailedTest4">
+            <h2>本館中央詳細テスト4</h2>
+            <img src="photo/DetailedTest4.jpg" alt="本館中央詳細テスト4 写真">
+        </div>
+
+        <div id="OceanAndRiverLab">
+            <h2>海と川のラボ</h2>
+            <img src="photo/OceanAndRiverLab.jpg" alt="海と川のラボ 写真">
+        </div>
+
+        <div id="FireLab">
+            <h2>火災のラボ</h2>
+            <img src="photo/FireLab.jpg" alt="火災のラボ 写真">
+        </div>
+
+        <div id="SoundAndElectromagneticLab">
+            <h2>音と電磁のラボ</h2>
+            <img src="photo/SoundAndElectromagneticLab.jpg" alt="音と電磁のラボ 写真">
+        </div>
+
+        <div id="AcousticsLab">
+            <h2>音響のラボ</h2>
+            <img src="photo/AcousticsLab.jpg" alt="音響のラボ 写真">
+        </div>
+
+        <div id="WindSoundLab">
+            <h2>風音のラボ</h2>
+            <img src="photo/WindSoundLab.jpg" alt="風音のラボ 写真">
+        </div>
+
+        <div id="WindLab">
+            <h2>風のラボ</h2>
+            <img src="photo/WindLab.jpg" alt="風のラボ 写真">
+        </div>
+
+        <div id="MechanicalConstructionLab">
+            <h2>機械化施工のラボ</h2>
+            <img src="photo/MechanicalConstructionLab.jpg" alt="機械化施工のラボ 写真">
+        </div>
+
+        <div id="HumanAndSpaceLab">
+            <h2>人と空間のラボ</h2>
+            <img src="photo/HumanAndSpaceLab.jpg" alt="人と空間のラボ 写真">
+        </div>
+
+        <div id="SoilAndSpaceLab">
+            <h2>土と空間のラボ</h2>
+            <img src="photo/SoilAndSpaceLab.jpg" alt="土と空間のラボ 写真">
+
+        </div>
+        <div id="StructureLab">
+            <h2>構造のラボ</h2>
+            <img src="photo/StructureLab.jpg" alt="構造のラボ 写真">
+        </div>
     </div>
 
     <!--エンティティ類の作成-->
@@ -148,28 +245,108 @@
 
         <!--box－たち-->
         <a-entity class="boxes" material='color: turquoise' geometry='primitive:box'
-            gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="10 10 10">
-        </a-entity>
+            gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: magenta' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4238988; longitude:139.5423822" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: olive' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4237131; longitude:139.5421153" scale="10 10 10"></a-entity>
         <a-entity class="boxes" material='color: lime' geometry='primitive: box'
             gps-new-entity-place="latitude:35.4238595; longitude:139.5419704" scale="10 10 10" clicker></a-entity>
+        <a-entity class="boxes" material='color: cyan' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4240518; longitude:139.5415929" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: purple' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4241725; longitude:139.5417332" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: pink' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4244774; longitude:139.541322" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: brown' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4249605; longitude:139.5412872" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: silver' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4252686; longitude:139.5416519" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: black' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4251834; longitude:139.5419202" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: red' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4250632; longitude:139.5421964" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: yellow' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.424884; longitude:139.5424566" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: green' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4245736; longitude:139.5416278" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: blue' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4243026; longitude:139.5420838" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: orange' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4244534; longitude:139.5419202" scale="10 10 10"></a-entity>
+        <a-entity class="boxes" material='color: white' geometry='primitive: box'
+            gps-new-entity-place="latitude:35.4247791; longitude:139.5421455" scale="10 10 10"></a-entity>
+
 
         <!--plane－たち-->
+        <a-entity class="planes" material="shader:html; target: #MainBuildingEast" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4240562; longitude: 139.5426021"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #MainBuildingCentral" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4238988; longitude: 139.5423822"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #MainBuildingWest" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4237131; longitude: 139.5421153"
+            scale="10 10 10"></a-entity>
         <a-entity class="planes" material="shader:html; target: #WoodDeck" geometry='primitive:plane'
             look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4238595; longitude: 139.5419704"
             scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #MaterialsLabEast" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4240518; longitude: 139.5415929"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #MaterialsLabWest" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4241725; longitude: 139.5417332"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #DetailedTest1" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4240303; longitude: 139.542414"
+            scale="3 3 3"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #DetailedTest2" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4239909; longitude: 139.5423523"
+            scale="3 3 3"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #DetailedTest3" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4239265; longitude: 139.5422665"
+            scale="3 3 3"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #DetailedTest4" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4238653; longitude: 139.5421874"
+            scale="3 3 3"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #OceanAndRiverLab" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4244774; longitude: 139.541322"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #FireLab" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4249605; longitude: 139.5412872"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #SoundAndElectromagneticLab" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4252686; longitude: 139.5416519"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #AcousticsLab" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4251834; longitude: 139.5419202"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #WindSoundLab" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4250632; longitude: 139.5421964"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #WindLab" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.424884; longitude: 139.5424566"
+            scale="10 10 10" click_url_WindLab></a-entity>
+        <a-entity class="planes" material="shader:html; target: #MechanicalConstructionLab" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4245736; longitude: 139.5416278"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #HumanAndSpaceLab" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4243026; longitude: 139.5420838"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #SoilAndSpaceLab" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4244534; longitude: 139.5419202"
+            scale="10 10 10"></a-entity>
+        <a-entity class="planes" material="shader:html; target: #StructureLab" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4247791; longitude: 139.5421455"
+            scale="10 10 10" click_url_StructureLab></a-entity>
+
     </a-scene>
 
     <!--ボタン類の作成-->
-    <div id='setloc'
-        style='position:absolute; left: 10px; bottom: 2%; z-index:999; background-color: blue; color: white; padding: 10px'>
-        <input type='button' id='go' value='Set Heading' onclick="setHeading()" />
-    </div>
-    <div id="orientinfo"
-        style='position:absolute; right: 10px; bottom: 2%; z-index:999; background-color: blue; color: white; padding: 10px'>
-        Orientation .</div>
-        <!--バナーに流したい文字を入力-->
-    <div class="scroll-banner"style='position:absolute;top: 1%; z-index:999'>
-        <p class="scroll-text">iPhoneの方は一番最初のアクセス時、リロードが必要です。方位がおかしくなった場合はリロードしてください</p>
+
+    <!--バナーに流したい文字を入力-->
+    <div class="scroll-banner" style='position:absolute;top: 1%; z-index:999'>
+        <p class="scroll-text">iPhoneの方は一番のはじめのアクセス時、リロードが必要です。方位がおかしくなった場合はリロードしてください</p>
     </div>
 </body>
 

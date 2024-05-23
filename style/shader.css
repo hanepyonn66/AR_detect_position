@@ -1,12 +1,41 @@
-#WoodDeck{
-    background: rgb(142, 140, 198);
+#MainBuildingEast, #MainBuildingCentral, #MainBuildingWest, #WoodDeck, #MaterialsLabEast, #MaterialsLabWest,
+#DetailedTest1, #DetailedTest2, #DetailedTest3, #DetailedTest4, #OceanAndRiverLab, #FireLab,
+#SoundAndElectromagneticLab, #AcousticsLab, #WindSoundLab, #WindLab, #MechanicalConstructionLab,
+#HumanAndSpaceLab, #SoilAndSpaceLab, #StructureLab {
+    background: rgb(102, 112, 199);
     height: 200px;
     width: 200px;
     font-size: 12px;
     z-index: -50;
     position: absolute;
 }
-#WoodDeck img {
+
+#MainBuildingEast { background: rgb(142, 140, 198); }
+#MainBuildingCentral { background: rgb(167, 145, 195); }
+#MainBuildingWest { background: rgb(163, 140, 180); }
+#WoodDeck { background: rgb(151, 164, 141); }
+#MaterialsLabEast { background: rgb(164, 155, 143); }
+#MaterialsLabWest { background: rgb(151, 136, 169); }
+#DetailedTest1 { background: rgb(220, 183, 138); }
+#DetailedTest2 { background: rgb(206, 196, 120); }
+#DetailedTest3 { background: rgb(124, 219, 231); }
+#DetailedTest4 { background: rgb(92, 105, 113); }
+#OceanAndRiverLab { background: rgb(167, 81, 99); }
+#FireLab { background: rgb(136, 83, 50); }
+#SoundAndElectromagneticLab { background: rgb(192, 192, 192); }
+#AcousticsLab { background: rgb(240, 143, 208); }
+#WindSoundLab { background: rgb(238, 130, 130); }
+#WindLab { background: rgb(228, 228, 142); }
+#MechanicalConstructionLab { background: rgb(172, 230, 172); }
+#HumanAndSpaceLab { background: rgb(166, 166, 228); }
+#SoilAndSpaceLab { background: rgb(245, 223, 183); }
+#StructureLab { background: rgb(255, 255, 255); }
+
+#MainBuildingEast img, #MainBuildingCentral img, #MainBuildingWest img, #WoodDeck img, 
+#MaterialsLabEast img, #MaterialsLabWest img, #DetailedTest1 img, #DetailedTest2 img, #DetailedTest3 img, 
+#DetailedTest4 img, #OceanAndRiverLab img, #FireLab img, #SoundAndElectromagneticLab img, #AcousticsLab img, 
+#WindSoundLab img, #WindLab img, #MechanicalConstructionLab img, #HumanAndSpaceLab img, #SoilAndSpaceLab img, 
+#StructureLab img {
     max-width: 100%;
     max-height: 100%;
     display: block;
