@@ -133,10 +133,11 @@
 
 <body>
     <!--shader－で反映させるhtml-->
-    <div id="MainBuildingEast">
-        <h2>本館東</h2>
-        <img src="photo/MainBuildingEast.jpg" alt="本館東 写真">
+    <div id="WoodDeck">
+        <h2>ウッドデッキ</h2>
+        <img src="photo/WoodDeck.jpg" alt="ウッドデッキ 写真">
     </div>
+
     <!--エンティティ類の作成-->
     <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
         renderer='antialias: true; alpha: true' cursor='rayOrigin: mouse' raycaster='near: 0; far:10000'>
@@ -149,8 +150,8 @@
         </a-entity>
 
         <!--plane－たち-->
-        <a-entity class="planes" material="shader:html; target: #MainBuildingEast" geometry='primitive:plane'
-            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4240562; longitude: 139.5426021"
+        <a-entity class="planes" material="shader:html; target: #WoodDeck" geometry='primitive:plane'
+            look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4238595; longitude: 139.5419704"
             scale="10 10 10"></a-entity>
     </a-scene>
 
