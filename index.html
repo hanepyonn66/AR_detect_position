@@ -3,10 +3,17 @@
 <head>
 <title>AR.js A-Frame</title>
 <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-<!-- Assumes AR.js build is in the 'AR.js' directory -->
+<!--ローカルに保存、オンラインの奴はバグあり-->
 <script type='text/javascript' src='./libs/ar-threex-location-only.js'></script>
 <script type='text/javascript' src='./libs/aframe-ar.js'></script>
+<!--lookAt用コンポーネント-->
+<script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+<!--htmlshader用コンポーネント２つ-->
+<script src="libs/aframe-html-shader.min.js"></script>
+<script src="libs/html2canvas.min.js"></script>
+
 </head>
+<!--北を補正するプログラム、ついでに東西南北の箱も生成-->
 <script>
 	let heading = 0;
     let initialHeading = false;
