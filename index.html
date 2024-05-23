@@ -46,7 +46,7 @@
     function setHeading() {
         const el = document.querySelector("[gps-new-camera]");
         if (el) {
-            
+
             el.setAttribute("arjs-device-orientation-controls", "headingOffset", -this.heading);
         }
         else {
@@ -234,7 +234,7 @@
         <div id="StructureLab">
             <h2>構造のラボ</h2>
             <img src="photo/StructureLab.jpg" alt="構造のラボ 写真">
-        </div>  
+        </div>
     </div>
 
     <!--エンティティ類の作成-->
@@ -347,10 +347,12 @@
     </a-scene>
 
     <!--ボタン類の作成-->
+    
     <div id='setloc'
         style='position:absolute; left: 10px; bottom: 2%; z-index:999; background-color: blue; color: white; padding: 10px'>
         <input type='button' id='go' value='Set Heading' onclick="setHeading()" />
     </div>
+    <!--なぜかないと動かないので隠してある-->
     <div id="orientinfo"
         style='position:absolute; right: 10px; bottom: 2%; z-index:-1; background-color: blue; color: white; padding: 10px'>
         Orientation .</div>
