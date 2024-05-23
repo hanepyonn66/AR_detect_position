@@ -145,7 +145,7 @@
             <h2>本館中央</h2>
             <img src="photo/MainBuildingCentral.jpg" alt="本館中央 写真">
         </div>
-<!--
+        <!--
         <div id="MainBuildingWest">
             <h2>本館西</h2>
             <img src="photo/MainBuildingWest.jpg" alt="本館西 写真">
@@ -289,7 +289,7 @@
         <a-entity class="planes" material="shader:html; target: #MainBuildingCentral" geometry='primitive:plane'
             look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4238988; longitude: 139.5423822"
             scale="10 10 10"></a-entity>
-     <!--   <a-entity class="planes" material="shader:html; target: #MainBuildingWest" geometry='primitive:plane'
+        <!--   <a-entity class="planes" material="shader:html; target: #MainBuildingWest" geometry='primitive:plane'
             look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4237131; longitude: 139.5421153"
             scale="10 10 10"></a-entity>
         <a-entity class="planes" material="shader:html; target: #WoodDeck" geometry='primitive:plane'
@@ -347,7 +347,13 @@
     </a-scene>
 
     <!--ボタン類の作成-->
-
+    <div id='setloc'
+        style='position:absolute; left: 10px; bottom: 2%; z-index:999; background-color: blue; color: white; padding: 10px'>
+        <input type='button' id='go' value='Set Heading' onclick="setHeading()" />
+    </div>
+    <div id="orientinfo"
+        style='position:absolute; right: 10px; bottom: 2%; z-index:999; background-color: blue; color: white; padding: 10px'>
+        Orientation .</div>
     <!--バナーに流したい文字を入力-->
     <div class="scroll-banner" style='position:absolute;top: 1%; z-index:999'>
         <p class="scroll-text">iPhoneの方は一番のはじめのアクセス時、リロードが必要です。方位がおかしくなった場合はリロードしてください</p>
