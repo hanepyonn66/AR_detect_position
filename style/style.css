@@ -5,7 +5,7 @@
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 2px;
 }
 .scroll-text {
     display: inline-block;
