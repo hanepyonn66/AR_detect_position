@@ -182,7 +182,7 @@
 
         <!--box－たち-->
 
-   
+
         <a-entity class="boxes" material='color: turquoise' geometry='primitive:box'
             gps-new-entity-place="latitude:35.4240562; longitude:139.5426021" scale="10 10 10"></a-entity>
         <a-entity class="boxes" material='color: magenta' geometry='primitive: box'
@@ -221,12 +221,53 @@
         <a-assets>
             <img id="mappin" src="mappim.png">
         </a-assets>
-        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10" material="src: #mappin; transparent: true"
-            look-at="[gps-new-camera]"
+        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
+            material="src: #mappin; transparent: true" look-at="[gps-new-camera]"
             gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895">
         </a-entity>
 
-  <!--plane－たち-->
+        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
+            material="src: #mappin; transparent: true" look-at="[gps-new-camera]"
+            gps-new-entity-place="latitude: 35.4243415; longitude: 139.5425821" name="人道橋">
+        </a-entity>
+
+        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
+            material="src: #mappin; transparent: true" look-at="[gps-new-camera]"
+            gps-new-entity-place="latitude: 35.423959; longitude: 139.5420403" name="資材受付">
+        </a-entity>
+
+        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
+            material="src: #mappin; transparent: true" look-at="[gps-new-camera]"
+            gps-new-entity-place="latitude: 35.4237645; longitude: 139.5415669" name="風車">
+        </a-entity>
+
+        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
+            material="src: #mappin; transparent: true" look-at="[gps-new-camera]"
+            gps-new-entity-place="latitude: 35.4242103; longitude: 139.542739" name="エキスパントジョイント">
+        </a-entity>
+
+        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
+            material="src: #mappin; transparent: true" look-at="[gps-new-camera]"
+            gps-new-entity-place="latitude: 35.4251108; longitude: 139.5426948" name="守衛室">
+        </a-entity>
+
+        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
+            material="src: #mappin; transparent: true" look-at="[gps-new-camera]"
+            gps-new-entity-place="latitude: 35.4246715; longitude: 139.5421127" name="カラフル反力壁">
+        </a-entity>
+
+        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
+            material="src: #mappin; transparent: true" look-at="[gps-new-camera]"
+            gps-new-entity-place="latitude: 35.4245098; longitude: 139.541697" name="３Dプリント橋">
+        </a-entity>
+
+        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
+            material="src: #mappin; transparent: true" look-at="[gps-new-camera]"
+            gps-new-entity-place="latitude: 35.4242407; longitude: 139.5422184" name="池">
+        </a-entity>
+
+
+        <!--plane－たち-->
         <a-entity class="planes" material="shader:html; target: #MainBuildingEast" geometry='primitive:plane'
             look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4240562; longitude: 139.5426021"
             scale="10 10 10"></a-entity>
@@ -293,9 +334,9 @@
         <p>表示レイヤ選択</p>
         <input type="checkbox" id="togglePlanes">
         <label for="togglePlanes">写真</label><br>
-        <input type="checkbox" id="toggleBoxes" >
+        <input type="checkbox" id="toggleBoxes">
         <label for="toggleBoxes">箱</label><br>
-        <input type="checkbox" id="togglePin" >
+        <input type="checkbox" id="togglePin">
         <label for="togglePin">ピン</label>
     </div>
 </body>
