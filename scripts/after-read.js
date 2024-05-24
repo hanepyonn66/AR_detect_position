@@ -25,73 +25,44 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
-    //レイヤ1
-    const togglePlanesCheckbox = document.getElementById("togglePlanes");
-    const planes = document.querySelectorAll(".planes");
-
-    togglePlanesCheckbox.addEventListener("change", function () {
-        if (togglePlanesCheckbox.checked) {
-            planes.forEach(entity => {
-                entity.setAttribute('visible', 'true');
+    function toggleVisibility(toggleElement, targetClass) {
+        const targets = document.querySelectorAll(targetClass);
+        toggleElement.addEventListener("change", function () {
+            const visibility = toggleElement.checked ? 'true' : 'false';
+            targets.forEach(entity => {
+                entity.setAttribute('visible', visibility);
             });
-        } else {
-            planes.forEach(entity => {
-                entity.setAttribute('visible', 'false');
-            });
-        }
-    });
+            updatePlanePosition();
+        });
 
-    // 初期状態をチェックボックスの状態に合わせる
-    if (!togglePlanesCheckbox.checked) {
+        // 初期状態をチェックボックスの状態に合わせる
+        const initialVisibility = toggleElement.checked ? 'true' : 'false';
+        targets.forEach(entity => {
+            entity.setAttribute('visible', initialVisibility);
+        });
+    }
+
+    function updatePlanePosition() {
+        const planes = document.querySelectorAll(".planes");
+        const isPlanesChecked = document.getElementById("togglePlanes").checked;
+        const isBoxesChecked = document.getElementById("toggleBoxes").checked;
+
+        const position = (isPlanesChecked && isBoxesChecked) ? "0 15 0" : "0 0 0";
         planes.forEach(entity => {
-            entity.setAttribute('visible', 'false');
+            entity.setAttribute('position', position);
         });
     }
-    //レイヤ2
+
+    const togglePlanesCheckbox = document.getElementById("togglePlanes");
+    toggleVisibility(togglePlanesCheckbox, ".planes");
+
     const toggleBoxesCheckbox = document.getElementById("toggleBoxes");
-    const boxes = document.querySelectorAll(".boxes");
+    toggleVisibility(toggleBoxesCheckbox, ".boxes");
 
-    toggleBoxesCheckbox.addEventListener("change", function () {
-        if (toggleBoxesCheckbox.checked) {
-            boxes.forEach(entity => {
-                entity.setAttribute('visible', 'true');
-            });
-        } else {
-            boxes.forEach(entity => {
-                entity.setAttribute('visible', 'false');
-            });
-        }
-    });
-
-    // 初期状態をチェックボックスの状態に合わせる
-    if (!toggleBoxesCheckbox.checked) {
-        boxes.forEach(entity => {
-            entity.setAttribute('visible', 'false');
-        });
-    }
-
-    //レイヤ3
     const togglePinCheckbox = document.getElementById("togglePin");
-    const pin = document.querySelectorAll(".pin");
+    toggleVisibility(togglePinCheckbox, ".pin");
 
-    togglePinCheckbox.addEventListener("change", function () {
-        if (togglePinCheckbox.checked) {
-            pin.forEach(entity => {
-                entity.setAttribute('visible', 'true');
-            });
-        } else {
-            pin.forEach(entity => {
-                entity.setAttribute('visible', 'false');
-            });
-        }
-    });
-
-    // 初期状態をチェックボックスの状態に合わせる
-    if (!togglePinCheckbox.checked) {
-        pin.forEach(entity => {
-            entity.setAttribute('visible', 'false');
-        });
-    }
+    // 初期状態の位置を設定
+    updatePlanePosition();
 });
