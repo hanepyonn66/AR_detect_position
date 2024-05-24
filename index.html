@@ -285,6 +285,13 @@
 -->
 
         <!--plane－たち-->
+        <a-entity
+        geometry="primitive: plane; width: 10; height: 10"
+        material="src: #mappin; transparent: true"
+        look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895">
+      </a-entity>
+
+
         <a-entity class="planes" material="shader:html; target: #MainBuildingEast" geometry='primitive:plane'
             look-at="[gps-new-camera]" gps-new-entity-place="latitude: 35.4240562; longitude: 139.5426021"
             scale="10 10 10"></a-entity>
@@ -354,7 +361,7 @@
     <div id="orientinfo"
         style='position:absolute; right: 10px; bottom: 2%; z-index:-1; background-color: blue; color: white; padding: 10px'>
         Orientation .</div>
-    <!--バナーに流したい文字を入力
+    <!--バナーに流したい文字を入力-->
     <div class="scroll-banner" style='position:absolute;top: 5px; z-index:1'>
         <p class="scroll-text">iPhoneの方は一番のはじめのアクセス時、リロードが必要です。方位がおかしくなった場合はリロードしてください。画面の回転ロックはオンにしてください。</p>
     </div>
@@ -366,7 +373,7 @@
         <label for="option2">オプション2</label><br>
         <input type="checkbox" id="option3" name="option3">
         <label for="option3">オプション3</label>
-    </div>-->
+    </div>
 </body>
 
 </html>
