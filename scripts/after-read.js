@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
     togglePlanesCheckbox.addEventListener("change", function () {
         if (togglePlanesCheckbox.checked) {
             planes.forEach(entity => {
-              entity.setAttribute('visible', "true");
+              entity.setAttribute('hidden', "false");
             });
         } else {
             planes.forEach(entity => {
-                entity.setAttribute('visible', "false");
+                entity.setAttribute('hidden', "true");
               });
         }
     });
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // 初期状態をチェックボックスの状態に合わせる
     if (!togglePlanesCheckbox.checked) {
         planes.forEach(entity => {
-            entity.setAttribute('visible', "false");
+            entity.setAttribute('hidden', "true");
           });
     }
 });
