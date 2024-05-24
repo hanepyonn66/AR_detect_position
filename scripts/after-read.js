@@ -34,42 +34,42 @@ document.addEventListener("DOMContentLoaded", function () {
     togglePlanesCheckbox.addEventListener("change", function () {
         if (togglePlanesCheckbox.checked) {
             planes.forEach(entity => {
-              entity.setAttribute('visible','true');
+                entity.setAttribute('visible', 'true');
             });
         } else {
             planes.forEach(entity => {
                 entity.setAttribute('visible', 'false');
-              });
+            });
         }
     });
 
     // 初期状態をチェックボックスの状態に合わせる
     if (!togglePlanesCheckbox.checked) {
         planes.forEach(entity => {
-            entity.setAttribute('visible','false');
-          });
+            entity.setAttribute('visible', 'false');
+        });
     }
-//レイヤ2
+    //レイヤ2
     const toggleBoxesCheckbox = document.getElementById("toggleBoxes");
     const boxes = document.querySelectorAll(".boxes");
 
     toggleBoxesCheckbox.addEventListener("change", function () {
         if (toggleBoxesCheckbox.checked) {
             boxes.forEach(entity => {
-              entity.setAttribute('visible','true');
+                entity.setAttribute('visible', 'true');
             });
         } else {
             boxes.forEach(entity => {
                 entity.setAttribute('visible', 'false');
-              });
+            });
         }
     });
 
     // 初期状態をチェックボックスの状態に合わせる
     if (!toggleBoxesCheckbox.checked) {
         boxes.forEach(entity => {
-            entity.setAttribute('visible','false');
-          });
+            entity.setAttribute('visible', 'false');
+        });
     }
 
     //レイヤ3
@@ -79,19 +79,19 @@ document.addEventListener("DOMContentLoaded", function () {
     togglePinCheckbox.addEventListener("change", function () {
         if (togglePinCheckbox.checked) {
             pin.forEach(entity => {
-              entity.setAttribute('visible','true');
+                entity.setAttribute('visible', 'true');
             });
         } else {
             pin.forEach(entity => {
                 entity.setAttribute('visible', 'false');
-              });
+            });
         }
     });
 
     // 初期状態をチェックボックスの状態に合わせる
     if (!togglePinCheckbox.checked) {
         pin.forEach(entity => {
-            entity.setAttribute('visible','false');
-          });
+            entity.setAttribute('visible', 'false');
+        });
     }
 });
