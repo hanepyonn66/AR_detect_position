@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
               entity.setAttribute('visible','true');
             });
         } else {
-            planes.forEach(entity => {
+            boxes.forEach(entity => {
                 entity.setAttribute('visible', 'false');
               });
         }
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
               entity.setAttribute('visible','true');
             });
         } else {
-            planes.forEach(entity => {
+            pin.forEach(entity => {
                 entity.setAttribute('visible', 'false');
               });
         }
