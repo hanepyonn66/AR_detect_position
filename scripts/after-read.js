@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
             targets.forEach(entity => {
                 entity.setAttribute('visible', visibility);
             });
-            updatePlanePosition();
         });
 
         // 初期状態をチェックボックスの状態に合わせる
@@ -43,16 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    function updatePlanePosition() {
-        const planes = document.querySelectorAll(".planes");
-        const isPlanesChecked = document.getElementById("togglePlanes").checked;
-        const isBoxesChecked = document.getElementById("toggleBoxes").checked;
 
-        const position = (isPlanesChecked && isBoxesChecked) ? "0 15 0" : "0 0 0";
-        planes.forEach(entity => {
-            entity.setAttribute('position', position);
-        });
-    }
 
     const togglePlanesCheckbox = document.getElementById("togglePlanes");
     toggleVisibility(togglePlanesCheckbox, ".planes");
