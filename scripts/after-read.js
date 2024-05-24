@@ -41,9 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             entity.setAttribute('visible', initialVisibility);
         });
     }
-
-
-
+    
     const togglePlanesCheckbox = document.getElementById("togglePlanes");
     toggleVisibility(togglePlanesCheckbox, ".planes");
 
