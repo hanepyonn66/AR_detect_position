@@ -15,6 +15,8 @@
     <!--css読み込み-->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/shader.css">
+    <!--クリック処理の追加-->
+    <script src="scripts/clicker.js"></script>
 
 </head>
 <!--北を補正するプログラム-->
@@ -274,7 +276,7 @@
         <a-assets>
             <img id="explain_test" src="explain/test.png">
         </a-assets>
-        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
+        <a-entity class="explain" geometry="primitive: plane; width: 10; height: 10"
             material="src: #explain_test; transparent: true; side: double" look-at="[gps-new-camera]"
             gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895"
             position="0 10 0">

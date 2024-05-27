@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.getElementById("menuButton");
     const menuContent = document.getElementById("menuContent");
+    const explains = document.querySelectorAll("explain");
 
     menuButton.onclick = function (event) {
         event.stopPropagation(); // イベントの伝播を防止
@@ -15,8 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener("click", function (event) {
         if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+            //ボタン以外がクリックされたときの処理
             menuContent.style.display = "none";
             menuButton.textContent = "メニューを開く";
+            explains.forEach(entity => {
+                entity.setAttribute('visible' , 'false');
+            })
         }
     });
 
@@ -25,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {//チェックボックス処理
     function toggleVisibility(toggleElement, targetClass) {
         const targets = document.querySelectorAll(targetClass);
         toggleElement.addEventListener("change", function () {
@@ -41,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             entity.setAttribute('visible', initialVisibility);
         });
     }
-    
+
     const togglePlanesCheckbox = document.getElementById("togglePlanes");
     toggleVisibility(togglePlanesCheckbox, ".planes");
 
