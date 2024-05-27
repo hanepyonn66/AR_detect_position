@@ -3,9 +3,9 @@
 #SoundAndElectromagneticLab, #AcousticsLab, #WindSoundLab, #WindLab, #MechanicalConstructionLab,
 #HumanAndSpaceLab, #SoilAndSpaceLab, #StructureLab {
     background: rgb(102, 112, 199);
-    height: 200px;
-    width: 200px;
-    font-size: 12px;
+    height: 1000px;
+    width: 1000px;
+    font-size: 60px;
     z-index: -50;
     position: absolute;
 }
