@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.getElementById("menuButton");
     const menuContent = document.getElementById("menuContent");
-    const explains = document.querySelectorAll("explain");
+    const explains = document.querySelectorAll(".explain");
 
     menuButton.onclick = function (event) {
         event.stopPropagation(); // イベントの伝播を防止
