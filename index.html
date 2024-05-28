@@ -172,6 +172,13 @@
             <h2>構造のラボ</h2>
             <img src="photo/StructureLab.jpg" alt="構造のラボ 写真">
         </div>
+        <div>
+            <div id="Ex2">
+                <div class="bubble">
+                    <p>12345</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--エンティティ類の作成-->
@@ -278,15 +285,15 @@
         </a-assets>
         <a-entity id="explain_id1" class="explain" geometry="primitive: plane; width: 10; height: 10"
             material="src: #explain_test; transparent: true; side: double" look-at="[gps-new-camera]"
-            gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" position="0 10 0" visible="false">
-        </a-entity>
-        <!--
-        <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
-            material="src: #mappin; transparent: true; side: double" look-at="[gps-new-camera]"
-            gps-new-entity-place="latitude: 35.4243415; longitude: 139.5425821" name="人道橋"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 3000; easing: linear">
+            gps-new-entity-place="latitude: 35.42409122191328; longitude: 139.54206104756895" position="0 10 0"
+            visible="false">
         </a-entity>
 
+        <a-entity class="explain_id1" geometry="primitive: plane; width: 10; height: 10"
+            material="shader:html; target: #MainBuildingEast" look-at="[gps-new-camera]"
+            gps-new-entity-place="latitude: 35.4243415; longitude: 139.5425821" name="人道橋">
+        </a-entity>
+        <!--
         <a-entity class="pin" geometry="primitive: plane; width: 10; height: 10"
             material="src: #mappin; transparent: true" look-at="[gps-new-camera]"
             gps-new-entity-place="latitude: 35.423959; longitude: 139.5420403" name="資材受付">
