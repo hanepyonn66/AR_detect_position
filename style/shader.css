@@ -45,7 +45,7 @@
 #Ex2 {
     width: 500px;
     height: 500px;
-    background-color: rgba(173, 216, 230,0.1); /* 背景を透過 */
+    background-color: rgba(173, 216, 230, 0); /* 背景を透過 */
     position: absolute;
 }
 .bubble {
