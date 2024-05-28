@@ -19,9 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
             //ボタン以外がクリックされたときの処理
             menuContent.style.display = "none";
             menuButton.textContent = "メニューを開く";
-            explains.forEach(entity => {
-                entity.setAttribute('visible' , 'false');
-            })
         }
     });
 
@@ -55,6 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {//チェックボッ�
 
     const togglePinCheckbox = document.getElementById("togglePin");
     toggleVisibility(togglePinCheckbox, ".pin");
+    toggleVisibility(togglePinCheckbox, ".explain");
+
 
     // 初期状態の位置を設定
     updatePlanePosition();
