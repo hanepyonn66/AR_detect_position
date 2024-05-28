@@ -172,13 +172,9 @@
             <h2>構造のラボ</h2>
             <img src="photo/StructureLab.jpg" alt="構造のラボ 写真">
         </div>
-        
-            <div id="Ex2">
-                <div class="bubble">
-                    <p>12345</p>
-                </div>
-            </div>
-       
+        <div id="Ex2">
+            <p id="ex2">現在の利用人数</p>
+        </div>
     </div>
 
     <!--エンティティ類の作成-->
@@ -289,8 +285,8 @@
             visible="false">
         </a-entity>
 
-        <a-entity class="explain_id1" geometry="primitive: plane; width: 10; height: 10"
-            material="shader:html; target: #Ex2" look-at="[gps-new-camera]"
+        <a-entity class="explain_id1" geometry="primitive: plane; width: 10; height: 2"
+            material="shader:html; target: #Ex2; fps: 1.0" look-at="[gps-new-camera]"
             gps-new-entity-place="latitude: 35.4243415; longitude: 139.5425821" name="人道橋">
         </a-entity>
         <!--
